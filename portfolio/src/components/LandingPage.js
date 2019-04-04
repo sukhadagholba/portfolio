@@ -29,7 +29,8 @@ const styles = theme => ({
 	fontFamily:'arial',
 	fontSize: 40,
 	color: '#666666',
-  
+ 	marginBottom: '2%',
+
         [theme.breakpoints.down('sm')]: {
         marginTop: '40%',
 	fontSize: 28,
@@ -41,9 +42,25 @@ const styles = theme => ({
       },  
   },
 
+  titleBar:{
+    margin: 'auto',
+    //marginTop: 2,       
+    width: '600px',
+    height: '1px',
+    backgroundColor: '#888888',
+    marginBottom: '2%',	  
+
+    [theme.breakpoints.down('xs')]: {
+     width: '140px',
+     height: '0.8px',	    
+    },  	  
+
+  }, 	
+
   subTitle:{
 	fontFamily:'Raleway',
         fontSize: 22,
+	marginBottom: '3%',  
 	
 	[theme.breakpoints.down('xs')]: {
         fontSize: 15,
@@ -51,7 +68,8 @@ const styles = theme => ({
 	 
 	[theme.breakpoints.down('sm')]: {
 	fontSize: 20,
-        },  
+         marginBottom: '5%',
+	},  
   },	
 
   scrollButtton:{
@@ -89,8 +107,9 @@ constructor(props){
 	    <div>
 	    <div className={classes.imageContainer}>
             <div className={classes.titleWrapper}>
-	    <p className={classes.titleStyle}>Hello, I am Sukhada Gholba</p>
-	    <p className={classes.subTitle}>I am a Full-Stack Web Developer</p>
+	    <div className={classes.titleStyle}>Hello, I am Sukhada Gholba</div>
+	     <div className={classes.titleBar}></div>
+	    <div className={classes.subTitle}>I am a Full-Stack Web Developer</div>
 	    </div>
 	   
 	    <ScrollIntoView className={classes.scrollButtton}  selector="#footer">
