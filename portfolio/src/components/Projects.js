@@ -14,7 +14,7 @@ const styles = theme => ({
 	padding: theme.spacing.unit * 3,  
 
 	[theme.breakpoints.down('sm')]: {
-        padding: theme.spacing.unit * 4
+        padding: theme.spacing.unit * 4,
         },
 	  
   },
@@ -30,11 +30,11 @@ const styles = theme => ({
          justifyContent: 'center',
         
         [theme.breakpoints.down('sm')]: {
-        //fontSize: 30,
+        fontSize: 30,
         },
 
 	[theme.breakpoints.down('xs')]: {
-        fontSize: 28, 
+        fontSize: 22, 
         },  
   },
 
@@ -45,20 +45,35 @@ const styles = theme => ({
     width: '160px',  //60
     height: '1px', //1.4
     backgroundColor: '#444649',
-    marginBottom: 2,	  
+    marginBottom: 2,
+
+    [theme.breakpoints.down('xs')]: {
+         width: '100px',
+    },	  
   
   },	
 
   projectImage: {
   	padding: theme.spacing.unit * 3,
+        height: '26%',
+        width: '26%',
+	
+	[theme.breakpoints.down('lg')]: {
+        height: '32%',
+        width: '32%',
+      	},
+	
+	[theme.breakpoints.down('md')]: {
         height: '35%',
         width: '35%',
+  	},
 
        [theme.breakpoints.down('sm')]: {
         height: '30%',
         width: '30%',
       }, 
         [theme.breakpoints.down('xs')]: {
+         padding: theme.spacing.unit * 1,		
         height: '40%',
         width: '50%',
       },  
@@ -66,19 +81,25 @@ const styles = theme => ({
   },	
 
   projectIntro: {
-  	width: '30%',
-        fontSize: 20,
-        //fontWeight: 500,
+  	width: '40%',
+        fontSize: 22,
         fontFamily:'Raleway',
-        color: 'black',         //'#616161',
+       	 color: 'black',         //'#616161',
+	 padding: theme.spacing.unit * 2,  
+	
+	[theme.breakpoints.down('md')]: {
+        fontSize: 20,
+        width: '100%',                
+      	},
 
         [theme.breakpoints.down('sm')]: {
-        fontSize: 15,
-      },  
+        fontSize: 18,
+        //width: '100%',		
+      	},  
 
        [theme.breakpoints.down('xs')]: {
-        fontSize: 13,
-	width: '60%',       
+        fontSize: 14,
+	width: '100%',       
       }, 
   },
 
@@ -102,8 +123,9 @@ const styles = theme => ({
         justifyContent: 'space-evenly',
  },
 
- link: {
+ linkStyle: {
  	textDecoration: 'none',
+	cursor: 'pointer', 
  },
  
  bio: {
@@ -116,7 +138,8 @@ const styles = theme => ({
 
         [theme.breakpoints.down('sm')]: {
         fontSize: 18,
-        width: '78%',
+        width: '88%',
+	padding: theme.spacing.unit * 0,	
         //height: '12%',        
       }, 
 
@@ -152,7 +175,7 @@ constructor(props){
             <div className={classes.titleBar}></div>
 	
 	    <div className={classes.container}>
-	    <a  className={classes.link}  href="https://labs10-webchat.netlify.com/">
+	    <a  className={classes.linkStyle}  href="https://labs10-webchat.netlify.com/">
 	    <div  className={classes.wrapper}>
 	    	<img
                   className={classes.projectImage}
@@ -160,14 +183,14 @@ constructor(props){
                   alt="chattr"
                   />
 
-		<div className={classes.projectIntro}>Chattr is a live chat tool for B2C and B2B companies to connect with visitors on their website. I worked on implementing Firebase for authentication, socket.io to connect customers with representatives into private live chat rooms. Implemented webhooks for Stripe subscriptions, built various RESTful endpoints on the backend added Redis to cache data.
-<p>Tech Stack: React, Material-ui, Node, Express, Postgresql, socket.io, Firebase, Stripe, Redis, Knex</p>	    
+		<div className={classes.projectIntro}>Chattr is a live chat tool for B2C and B2B companies to connect with visitors on their website.
+<p>Tech Stack: React, Material-ui, Node, Express, Postgresql, socket.io, Firebase, Stripe, Redis, Knex.</p>	    
 	    	</div>
 		
 	    </div>
 	</a>
 
-	<a className={classes.link}  href="https://knowledgetrybe.com/">
+	<a className={classes.linkStyle}  href="https://knowledgetrybe.com/">
 	   <div className={classes.wrapper}>
                 <img
                   className={classes.projectImage}
@@ -175,7 +198,7 @@ constructor(props){
                   alt="kt"
                   />
 
-                <div className={classes.projectIntro}>KnowledgeTrybe is a Hacker News like web app that allows users to share interesting articles with fellow readers. Users can submit articles across various fields for other users to read. 
+                <div className={classes.projectIntro}>KnowledgeTrybe is a Hacker News like web app that allows users to share interesting articles with fellow readers. 
 <p>Tech Stack: HTML, CSS, JQuery, PHP, SQL, AWS.</p>
                 </div>
 

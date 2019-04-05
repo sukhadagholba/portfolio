@@ -11,7 +11,6 @@ import NavBar from './NavBar';
 
 const styles = theme => ({
   root: {
-    //height: 180,
   },
  
   imageContainer: {
@@ -34,25 +33,45 @@ const styles = theme => ({
 	fontSize: 40,
 	color: '#666666',
  	marginBottom: '2%',
+	
+	[theme.breakpoints.down('xl')]: {
+        marginTop: '15%',
+        },
+	
+	[theme.breakpoints.down('md')]: {
+         marginTop: '15%',
+        //fontSize: 28,
+        },
 
         [theme.breakpoints.down('sm')]: {
-        marginTop: '40%',
+        marginTop: '20%',
 	fontSize: 28,
       	},
 
 	[theme.breakpoints.down('xs')]: {
-        marginTop: '60%',
+        marginTop: '50%',
 	fontSize: 20,
       },  
   },
 
   titleBar:{
     margin: 'auto',
-    //marginTop: 2,       
     width: '600px',
     height: '1px',
     backgroundColor: '#888888',
     marginBottom: '2%',	  
+	
+    [theme.breakpoints.down('xl')]: {
+        height: '1.2px',
+    },
+
+    [theme.breakpoints.down('md')]: {
+        width: '380px',
+    },
+
+    [theme.breakpoints.down('sm')]: {
+	//width:'200px',
+    },
 
     [theme.breakpoints.down('xs')]: {
      width: '140px',

@@ -23,11 +23,11 @@ const styles = theme => ({
 	 //color: '#C96830', 
 	
 	[theme.breakpoints.down('sm')]: {
-        fontSize: 34,
+        fontSize: 30,
         },
 
 	[theme.breakpoints.down('xs')]: {
-        fontSize: 28,	
+        fontSize: 22,	
 	}, 
   },
 
@@ -41,6 +41,10 @@ const styles = theme => ({
 
     [theme.breakpoints.down('sm')]: {
       height: '1.5px',
+    },
+    
+    [theme.breakpoints.down('xs')]: {
+         width: '100px',
     },	  
 
   },	
@@ -63,10 +67,12 @@ const styles = theme => ({
 	borderRadius: '50%', 
 
        [theme.breakpoints.down('sm')]: {
-        height: '30%',  //30
-        width: '30%',
+	padding: theme.spacing.unit * 1,       
+        height: '20%',  //30
+        width: '20%',
       }, 
 	[theme.breakpoints.down('xs')]: {
+        padding: theme.spacing.unit * 0,		
         height: '20%',
         width: '40%',
       },
@@ -90,13 +96,25 @@ const styles = theme => ({
 	[theme.breakpoints.down('sm')]: {
         fontSize: 18,
         width: '78%',		
-      },  
+      },
+
+       [theme.breakpoints.down('md')]: {
+        //fontSize: 18,
+        width: '88%',
+      },	  
 
        [theme.breakpoints.down('xs')]: {
+	padding: theme.spacing.unit * 2,       
       	width: '95%',
 	fontSize: 15, 
       },  
   },
+  linkStyle: {
+  	textDecoration: 'none',
+	cursor: 'pointer',
+	color: '#616161',  
+  
+  },	
 
 	
 });
@@ -135,7 +153,7 @@ constructor(props){
                   />
 
 	   
-	    <div className={classes.bio}>Hello, I am Sukhada Gholba. I am a Full-Stack web developer. I was born and raised in India and I have a degree in Electrical Engineering. I have always been passionate about science and technology since I was young. A year ago, I developed a deep passion for programming while watching my friends work on developing impactful applications and since then I have been working towards becoming a full-stack developer at Lambda School. I love developing applications in Node, Express, JavaScript, React and Postgresql. My experience as a Co-Founder and Product Manager at keereo helped me develop my skills in communications, team work, and leadership.
+	    <div className={classes.bio}>Hello, I am Sukhada Gholba. I am a Full-Stack web developer. I was born and raised in India and I have a degree in Electrical Engineering. I have always been passionate about science and technology since I was young. I love developing applications in Node, Express, JavaScript, React and Postgresql. My experience as a Co-Founder and Product Manager at <a href="https://keereo.com/" className={classes.linkStyle}>keereo</a> helped me develop my skills in communications, team work, and leadership.
 
 <p>In my free time I am an avid reader, I enjoy cooking, traveling and studying history.</p>	
 

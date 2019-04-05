@@ -22,11 +22,11 @@ const styles = theme => ({
          //color: '#C96830', 
         
         [theme.breakpoints.down('sm')]: {
-        fontSize: 34,
+        fontSize: 30,
         },
         
         [theme.breakpoints.down('xs')]: {
-        fontSize: 28,
+        fontSize: 22,
         },
   },
 
@@ -40,8 +40,11 @@ const styles = theme => ({
 
     [theme.breakpoints.down('sm')]: {
       height: '1.5px',
-    },   
+    },
 
+    [theme.breakpoints.down('xs')]: {
+         width: '100px',
+    },
   },
 
   wrapper: {
@@ -78,6 +81,7 @@ const styles = theme => ({
         fontFamily:'Raleway',
         color: '#616161',
         padding: theme.spacing.unit * 5,
+	//textAlign: 'center', 
 
         [theme.breakpoints.down('sm')]: {
         fontSize: 18,
@@ -121,13 +125,11 @@ render() {
     return (
             <div id="contact" className={classes.root}>
 
-            <div className={classes.titleWrapper}>
                <Typography className={classes.title} component='h2' variant='h5' gutterBottom>
                   Contact
                 </Typography>
 
                <div className={classes.titleBar}></div>
-            </div>
 
             <div className={classes.wrapper}>
 		
