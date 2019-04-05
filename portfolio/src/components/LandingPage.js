@@ -4,6 +4,9 @@ import { withStyles } from '@material-ui/core/styles';
 import Image from './images/background.png';
 import ScrollIntoView from 'react-scroll-into-view';
 import AboutPage from './AboutPage';
+import ProjectPage from './Projects';
+
+
 
 const styles = theme => ({
   root: {
@@ -24,7 +27,7 @@ const styles = theme => ({
         justifyContent: 'center',
   },	
  
-  titleStyle:{
+  title:{
   	marginTop: '20%',
 	fontFamily:'arial',
 	fontSize: 40,
@@ -72,17 +75,14 @@ const styles = theme => ({
 	},  
   },	
 
-  scrollButtton:{
+  scrollArrow:{
   	display: 'flex',
   	flexDirection: 'row',
   	alignItems: 'center',
   	justifyContent: 'center',
-	//marginBottom: '25%',  
+	cursor: 'pointer',
   },	
   
-  footerStyle:{
-  	//marginTop: '80%',  
-  },	
 
 
 });	
@@ -107,18 +107,18 @@ constructor(props){
 	    <div>
 	    <div className={classes.imageContainer}>
             <div className={classes.titleWrapper}>
-	    <div className={classes.titleStyle}>Hello, I am Sukhada Gholba</div>
+	    <div className={classes.title}>Sukhada Gholba</div>
 	     <div className={classes.titleBar}></div>
-	    <div className={classes.subTitle}>I am a Full-Stack Web Developer</div>
+	    <div className={classes.subTitle}>Full-Stack Web Developer</div>
 	    </div>
 	   
-	    <ScrollIntoView className={classes.scrollButtton}  selector="#footer">
+	    <ScrollIntoView className={classes.scrollArrow}  selector="#footer">
   		<i  className="fas fa-arrow-down fa-3x"  style={{color: 'gray'}}></i>
 	    </ScrollIntoView>
 	    </div>
 
 	    <div id ="footer">
-	    <AboutPage className={classes.footerStyle} />
+	    <AboutPage/>
 	    </div>
 	  </div>
     );

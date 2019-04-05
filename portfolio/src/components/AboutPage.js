@@ -14,11 +14,12 @@ const styles = theme => ({
   title:{
 	 fontSize: 40,
 	 fontFamily:'Raleway',
-	 marginTop: '4%',
+	 marginTop: '3%',
 	 display: 'flex',
          flexDirection: 'row',
          //alignItems: 'center',
-         justifyContent: 'center', 
+         justifyContent: 'center',
+	 //color: '#C96830', 
 	
 	[theme.breakpoints.down('sm')]: {
         //fontSize: 30,
@@ -30,8 +31,8 @@ const styles = theme => ({
     margin: 'auto',
     //marginTop: 1, 	  
     width: '150px',
-    height: '1.5px',
-    backgroundColor: '#444649',
+    height: '1px',
+    backgroundColor:'#444649',
 
   },	
 
@@ -39,7 +40,7 @@ const styles = theme => ({
   	display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'center',
+        justifyContent: 'space-evenly',
 	
 	[theme.breakpoints.down('sm')]: {
         flexDirection: 'column',
@@ -53,12 +54,12 @@ const styles = theme => ({
 	borderRadius: '50%', 
 
        [theme.breakpoints.down('sm')]: {
-        height: '30%',
+        height: '30%',  //30
         width: '30%',
       }, 
 	[theme.breakpoints.down('xs')]: {
-        height: '40%',
-        width: '50%',
+        height: '20%',
+        width: '40%',
       },  
  	 
   },
@@ -66,16 +67,17 @@ const styles = theme => ({
   bio: {
   	width: '50%',
 	fontSize: 22,
-	fontWeight: 500,  
+	fontWeight: 500,
         fontFamily:'Raleway',
 	color: '#616161',  
 
 	[theme.breakpoints.down('sm')]: {
-        fontSize: 18,
+        fontSize: 15,
+	//height: '12%',	
       },  
 
        [theme.breakpoints.down('xs')]: {
-      	fontSize: 16, 
+      	fontSize: 13, 
       },  
   },
 
@@ -106,7 +108,7 @@ constructor(props){
 
 
     return (
-            <div className={classes.root}>
+            <div id="about" className={classes.root}>
 	    	<NavBar />
 	       <div>	
 	       <div>	
@@ -119,12 +121,14 @@ constructor(props){
 		  <img
 	          className={classes.profileImage}
                   src={require("./images/profileimage.jpg")}
-                  alt="profile-picture"
+                  alt="profile"
                   />
 
 	   
 	    <div className={classes.bio}>Hello, I am Sukhada Gholba. I am a Full-Stack web developer. I was born and raised in India and I have a degree in Electrical Engineering. I have always been passionate about Science and Technology since I was young. A year ago, I developed a deep passion for programming while watching my friends work on developing impactful applications and since then I have been working towards becoming a full-stack developer at Lambda School. I love developing applications in Node, Express, JavaScript, React and Postgresql. My experience as a co-founder / Product Manager at keereo helped me develop my skills in communications, team work, and leadership.
-In my free time I am an avid reader, I enjoy cooking, traveling and studying history.	
+
+<p>In my free time I am an avid reader, I enjoy cooking, traveling and studying history.</p>	
+
 	   </div>
 	   </div> 
 	</div>	

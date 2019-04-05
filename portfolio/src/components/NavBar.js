@@ -65,13 +65,13 @@ function NavBar(props) {
             SUKHADA GHOLBA
           </Typography>
 
-          <a  href='/about' className={classes.linkStyle}>
+          <a  href='#about' className={classes.linkStyle}>
             <p className={classes.linkText}>ABOUT</p>
           </a>
-          <a href='/projects' className={classes.linkStyle}>
+          <a href='#projects' className={classes.linkStyle}>
             <p className={classes.linkText}>PROJECTS</p>
           </a>
-          <a href='/contact' className={classes.linkStyle}>
+          <a href='#contact' className={classes.linkStyle}>
             <p className={classes.linkText}>CONTACT</p>
           </a>
 
