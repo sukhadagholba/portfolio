@@ -104,7 +104,27 @@ const styles = theme => ({
 
  link: {
  	textDecoration: 'none',
- },	
+ },
+ 
+ bio: {
+        width: '50%',
+        fontSize: 22,
+        fontWeight: 500,
+        fontFamily:'Raleway',
+        color: '#616161',
+        padding: theme.spacing.unit * 4,
+
+        [theme.breakpoints.down('sm')]: {
+        fontSize: 18,
+        width: '78%',
+        //height: '12%',        
+      }, 
+
+       [theme.breakpoints.down('xs')]: {
+        width: '85%',
+        fontSize: 16,
+      }, 
+  },	
 
 });
 

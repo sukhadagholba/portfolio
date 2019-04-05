@@ -8,7 +8,7 @@ import NavBar from './NavBar';
 const styles = theme => ({
   root: {
    	height: "100vh",
-	padding: theme.spacing.unit * 3,  
+	padding: theme.spacing.unit * 4,  
 	  
   },
   
@@ -49,7 +49,7 @@ const styles = theme => ({
   	display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'space-evenly',
+        justifyContent: 'space-around',
 	
 	[theme.breakpoints.down('sm')]: {
         flexDirection: 'column',
@@ -58,8 +58,8 @@ const styles = theme => ({
 
   profileImage: {
   	padding: theme.spacing.unit * 3,
-	height: '30%',
-	width: '30%',  
+	height: '28%',
+	width: '28%',  
 	borderRadius: '50%', 
 
        [theme.breakpoints.down('sm')]: {
@@ -85,27 +85,18 @@ const styles = theme => ({
 	fontWeight: 500,
         fontFamily:'Raleway',
 	color: '#616161',
-	padding: theme.spacing.unit * 4,  
+	padding: theme.spacing.unit * 5,  
 
 	[theme.breakpoints.down('sm')]: {
         fontSize: 18,
         width: '78%',		
-	//height: '12%',	
       },  
 
        [theme.breakpoints.down('xs')]: {
-      	width: '85%',
-	fontSize: 16, 
+      	width: '95%',
+	fontSize: 15, 
       },  
   },
-
-  slideAnimation: {
-    position: 'absolute',
-    left: '-200px',
-    width: '100px',
-    height: '100px',
-    transition: '1s',
-},	
 
 	
 });
@@ -144,7 +135,7 @@ constructor(props){
                   />
 
 	   
-	    <div className={classes.bio}>Hello, I am Sukhada Gholba. I am a Full-Stack web developer. I was born and raised in India and I have a degree in Electrical Engineering. I have always been passionate about Science and Technology since I was young. A year ago, I developed a deep passion for programming while watching my friends work on developing impactful applications and since then I have been working towards becoming a full-stack developer at Lambda School. I love developing applications in Node, Express, JavaScript, React and Postgresql. My experience as a co-founder / Product Manager at keereo helped me develop my skills in communications, team work, and leadership.
+	    <div className={classes.bio}>Hello, I am Sukhada Gholba. I am a Full-Stack web developer. I was born and raised in India and I have a degree in Electrical Engineering. I have always been passionate about science and technology since I was young. A year ago, I developed a deep passion for programming while watching my friends work on developing impactful applications and since then I have been working towards becoming a full-stack developer at Lambda School. I love developing applications in Node, Express, JavaScript, React and Postgresql. My experience as a Co-Founder and Product Manager at keereo helped me develop my skills in communications, team work, and leadership.
 
 <p>In my free time I am an avid reader, I enjoy cooking, traveling and studying history.</p>	
 

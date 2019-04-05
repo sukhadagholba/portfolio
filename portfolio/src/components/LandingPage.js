@@ -5,6 +5,7 @@ import Image from './images/background.png';
 import ScrollIntoView from 'react-scroll-into-view';
 import AboutPage from './AboutPage';
 import ProjectPage from './Projects';
+import ContactPage from './ContactPage';
 import NavBar from './NavBar';
 
 
@@ -122,6 +123,7 @@ constructor(props){
 	    <AboutPage/>
 	    </div>
 	    <ProjectPage/>
+	    <ContactPage/>
 	  </div>
     );
   }
