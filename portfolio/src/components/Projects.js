@@ -140,7 +140,7 @@ constructor(props){
                   alt="chattr"
                   />
 
-		<div className={classes.projectIntro}>Chattr is a live chat tool for B2C and B2B companies to connect with visitors on their website. Implemented Firebase for authentication, socket.io to connect customers with representatives into private chat rooms. Implemented webhooks for Stripe subscriptions, built various RESTful endpoints on the backend, added Redis to cache data, styled the Landing and Pricing page.
+		<div className={classes.projectIntro}>Chattr is a live chat tool for B2C and B2B companies to connect with visitors on their website. I worked on implementing Firebase for authentication, socket.io to connect customers with representatives into private live chat rooms. Implemented webhooks for Stripe subscriptions, built various RESTful endpoints on the backend added Redis to cache data.
 <p>Tech Stack: React, Material-ui, Node, Express, Postgresql, socket.io, Firebase, Stripe, Redis, Knex</p>	    
 	    	</div>
 		
@@ -155,7 +155,7 @@ constructor(props){
                   alt="kt"
                   />
 
-                <div className={classes.projectIntro}>KnowledgeTrybe is a web app that allows users to share interesting articles with fellow readers. It is an article submission website like Hacker News where users can submit interesting articles across various fields for other users to read. 
+                <div className={classes.projectIntro}>KnowledgeTrybe is a Hacker News like web app that allows users to share interesting articles with fellow readers. Users can submit articles across various fields for other users to read. 
 <p>Tech Stack: HTML, CSS, JQuery, PHP, SQL, AWS.</p>
                 </div>
 
