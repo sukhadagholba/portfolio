@@ -139,8 +139,8 @@ render() {
                 <i className="fab fa-github fa-3x"></i> <p>Github</p>
 		</a>
 	       
-                <i className="fas fa-envelope fa-3x"></i><p>Email</p>
-	        <div>sukhadagholb@gmail.com</div>
+                <i className="fas fa-envelope fa-3x"></i>
+	        <p>sukhadagholb@gmail.com</p>
            </div>
         </div>
     );
