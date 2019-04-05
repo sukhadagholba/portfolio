@@ -18,7 +18,6 @@ constructor(props){
     return (
             <div>
 		<LandingPage/>
-	        <ProjectPage/>
            </div>
     );
   }

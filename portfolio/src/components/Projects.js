@@ -10,8 +10,15 @@ import NavBar from './NavBar';
 const styles = theme => ({
   root: {
         height: "100vh",
-	background: '#f5f5f5',  
+	background: '#f5f5f5',
+	padding: theme.spacing.unit * 3,  
+
+	[theme.breakpoints.down('sm')]: {
+        padding: theme.spacing.unit * 4
+        },
+	  
   },
+ 	
   
   title:{
          fontSize: 40,
@@ -25,6 +32,10 @@ const styles = theme => ({
         [theme.breakpoints.down('sm')]: {
         //fontSize: 30,
         },
+
+	[theme.breakpoints.down('xs')]: {
+        fontSize: 28, 
+        },  
   },
 
 
@@ -114,7 +125,6 @@ constructor(props){
 
     return (
    	<div id="projects" className={classes.root}>
-	   <NavBar />
 	
 	    <Typography className={classes.title} component='h2' variant='h5' gutterBottom>
                   Projects

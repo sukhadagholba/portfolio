@@ -5,7 +5,7 @@ import Image from './images/background.png';
 import ScrollIntoView from 'react-scroll-into-view';
 import AboutPage from './AboutPage';
 import ProjectPage from './Projects';
-
+import NavBar from './NavBar';
 
 
 const styles = theme => ({
@@ -106,7 +106,8 @@ constructor(props){
     return (
 	    <div>
 	    <div className={classes.imageContainer}>
-            <div className={classes.titleWrapper}>
+             <NavBar/>
+	    <div className={classes.titleWrapper}>
 	    <div className={classes.title}>Sukhada Gholba</div>
 	     <div className={classes.titleBar}></div>
 	    <div className={classes.subTitle}>Full-Stack Web Developer</div>
@@ -116,10 +117,11 @@ constructor(props){
   		<i  className="fas fa-arrow-down fa-3x"  style={{color: 'gray'}}></i>
 	    </ScrollIntoView>
 	    </div>
-
+	
 	    <div id ="footer">
 	    <AboutPage/>
 	    </div>
+	    <ProjectPage/>
 	  </div>
     );
   }

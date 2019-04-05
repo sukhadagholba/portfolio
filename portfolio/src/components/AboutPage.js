@@ -8,6 +8,7 @@ import NavBar from './NavBar';
 const styles = theme => ({
   root: {
    	height: "100vh",
+	padding: theme.spacing.unit * 3,  
 	  
   },
   
@@ -22,7 +23,11 @@ const styles = theme => ({
 	 //color: '#C96830', 
 	
 	[theme.breakpoints.down('sm')]: {
-        //fontSize: 30,
+        fontSize: 34,
+        },
+
+	[theme.breakpoints.down('xs')]: {
+        fontSize: 28,	
 	}, 
   },
 
@@ -33,6 +38,10 @@ const styles = theme => ({
     width: '150px',
     height: '1px',
     backgroundColor:'#444649',
+
+    [theme.breakpoints.down('sm')]: {
+      height: '1.5px',
+    },	  
 
   },	
 
@@ -60,24 +69,33 @@ const styles = theme => ({
 	[theme.breakpoints.down('xs')]: {
         height: '20%',
         width: '40%',
-      },  
+      },
+  },	  
+
+  titleWrapper: {
+  	[theme.breakpoints.down('sm')]: {	  
+  	marginBottom: '3%',
+	},	
+  },	  
  	 
-  },
 
   bio: {
   	width: '50%',
 	fontSize: 22,
 	fontWeight: 500,
         fontFamily:'Raleway',
-	color: '#616161',  
+	color: '#616161',
+	padding: theme.spacing.unit * 4,  
 
 	[theme.breakpoints.down('sm')]: {
-        fontSize: 15,
+        fontSize: 18,
+        width: '78%',		
 	//height: '12%',	
       },  
 
        [theme.breakpoints.down('xs')]: {
-      	fontSize: 13, 
+      	width: '85%',
+	fontSize: 16, 
       },  
   },
 
@@ -109,13 +127,14 @@ constructor(props){
 
     return (
             <div id="about" className={classes.root}>
-	    	<NavBar />
-	       <div>	
-	       <div>	
+	      
+	    <div className={classes.titleWrapper}>
 	       <Typography className={classes.title} component='h2' variant='h5' gutterBottom>
                   About
        		</Typography>
+
 	       <div className={classes.titleBar}></div>
+	    </div>
 
 	    <div className={classes.wrapper}>    
 		  <img
@@ -132,8 +151,6 @@ constructor(props){
 	   </div>
 	   </div> 
 	</div>	
-	 </div>   
-            </div>
     );
   }
 }
