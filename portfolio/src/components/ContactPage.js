@@ -20,13 +20,20 @@ const styles = theme => ({
          //alignItems: 'center',
          justifyContent: 'center',
          //color: '#C96830', 
-        
+       
+	[theme.breakpoints.down('md')]: {
+        fontSize: 34,
+        marginTop: '3%',
+        },
+
         [theme.breakpoints.down('sm')]: {
         fontSize: 30,
+	marginTop: '3%',	
         },
-        
+
         [theme.breakpoints.down('xs')]: {
         fontSize: 22,
+	marginTop: '7%',	
         },
   },
 
@@ -34,16 +41,18 @@ const styles = theme => ({
   titleBar:{
     margin: 'auto',
     //marginTop: 1,       
-    width: '150px',
+    width: '180px',
     height: '1px',
     backgroundColor:'#444649',
 
     [theme.breakpoints.down('sm')]: {
       height: '1.5px',
+      width: '150px',	    
     },
 
     [theme.breakpoints.down('xs')]: {
          width: '100px',
+	 height: '1px',   
     },
   },
 

@@ -37,14 +37,18 @@ const styles = theme => ({
 	[theme.breakpoints.down('xl')]: {
         marginTop: '15%',
         },
+
+	[theme.breakpoints.down('lg')]: {
+        marginTop: '18%',
+        },  
 	
 	[theme.breakpoints.down('md')]: {
-         marginTop: '15%',
+       	 marginTop: '20%',  //15
         //fontSize: 28,
         },
 
         [theme.breakpoints.down('sm')]: {
-        marginTop: '20%',
+        marginTop: '30%',   //20
 	fontSize: 28,
       	},
 

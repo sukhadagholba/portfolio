@@ -22,12 +22,19 @@ const styles = theme => ({
          justifyContent: 'center',
 	 //color: '#C96830', 
 	
-	[theme.breakpoints.down('sm')]: {
-        fontSize: 30,
+	[theme.breakpoints.down('md')]: {
+        fontSize: 34,
+	marginTop: '3%',	
         },
 
+	[theme.breakpoints.down('sm')]: {
+        fontSize: 30,
+        marginTop: '3%',
+        },  
+
 	[theme.breakpoints.down('xs')]: {
-        fontSize: 22,	
+        fontSize: 22,
+        marginTop: '7%', 		
 	}, 
   },
 
@@ -45,6 +52,7 @@ const styles = theme => ({
     
     [theme.breakpoints.down('xs')]: {
          width: '100px',
+	 height: '1px',   
     },	  
 
   },	

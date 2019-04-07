@@ -29,12 +29,19 @@ const styles = theme => ({
          //alignItems: 'center',
          justifyContent: 'center',
         
-        [theme.breakpoints.down('sm')]: {
+        [theme.breakpoints.down('md')]: {
+        fontSize: 34,
+        marginTop: '3%',
+        },
+
+	[theme.breakpoints.down('sm')]: {
         fontSize: 30,
+	marginTop: '3%',
         },
 
 	[theme.breakpoints.down('xs')]: {
-        fontSize: 22, 
+        fontSize: 22,
+	marginTop: '7%',	
         },  
   },
 
@@ -42,15 +49,27 @@ const styles = theme => ({
   titleBar:{
     margin: 'auto',
     //marginTop: 1,       
-    width: '160px',  //60
+    width: '180px',  //60
     height: '1px', //1.4
     backgroundColor: '#444649',
     marginBottom: 2,
+	
+    [theme.breakpoints.down('lg')]: {
+      //width: '180px',
+    },
 
+    [theme.breakpoints.down('md')]: {
+         height: '1.5px',
+    },	
+
+    [theme.breakpoints.down('sm')]: {
+         height: '1px',
+	  width: '150px',   
+    },	  
     [theme.breakpoints.down('xs')]: {
          width: '100px',
-    },	  
-  
+	 height: '1.5px', 
+    },
   },	
 
   projectImage: {
@@ -93,12 +112,14 @@ const styles = theme => ({
       	},
 
         [theme.breakpoints.down('sm')]: {
+	 //padding: theme.spacing.unit * 3,	
         fontSize: 18,
         //width: '100%',		
       	},  
 
        [theme.breakpoints.down('xs')]: {
-        fontSize: 14,
+	padding: theme.spacing.unit * 0,       
+        fontSize: 15,
 	width: '100%',       
       }, 
   },
