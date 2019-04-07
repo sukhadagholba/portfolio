@@ -33,7 +33,7 @@ const styles = theme => ({
 
         [theme.breakpoints.down('xs')]: {
         fontSize: 22,
-	marginTop: '7%',	
+	marginTop: '8%',	//7
         },
   },
 
@@ -44,6 +44,11 @@ const styles = theme => ({
     width: '180px',
     height: '1px',
     backgroundColor:'#444649',
+	
+     [theme.breakpoints.down('md')]: {
+      //height: '1.5px',
+      width: '150px',
+    },
 
     [theme.breakpoints.down('sm')]: {
       height: '1.5px',

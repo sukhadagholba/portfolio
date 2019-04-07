@@ -34,7 +34,7 @@ const styles = theme => ({
 
 	[theme.breakpoints.down('xs')]: {
         fontSize: 22,
-        marginTop: '7%', 		
+        marginTop: '8%', 		
 	}, 
   },
 
