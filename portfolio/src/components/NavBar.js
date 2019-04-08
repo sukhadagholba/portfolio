@@ -11,7 +11,7 @@ import ScrollIntoView from 'react-scroll-into-view';
 const styles = theme => ({
   root: {
     flexGrow: 1,
-    backgroundColor: '#202124',
+    backgroundColor: 'black',//'#202124',
     //marginBottom: '8%',	  
   },
 

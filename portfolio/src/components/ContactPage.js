@@ -100,11 +100,13 @@ const styles = theme => ({
         [theme.breakpoints.down('sm')]: {
         fontSize: 18,
         width: '78%',
+	textAlign: 'center',		
       },
 
        [theme.breakpoints.down('xs')]: {
         width: '95%',
         fontSize: 15,
+	textAlign: 'center',       
       },
  },	
 

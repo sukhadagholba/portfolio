@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import Image from './images/background.png';
+//import Image from './images/aeria.jpg';
 import ScrollIntoView from 'react-scroll-into-view';
 import AboutPage from './AboutPage';
 import ProjectPage from './Projects';
@@ -14,8 +14,9 @@ const styles = theme => ({
   },
  
   imageContainer: {
-        backgroundImage: `url(${Image})`,
-  	backgroundSize: 'cover',
+        //backgroundImage: `url(${Image})`,
+  	//backgroundSize: 'cover',
+	background: 'black',
   	height: '100vh',
 	  
     },	
@@ -31,7 +32,7 @@ const styles = theme => ({
   	marginTop: '20%',
 	fontFamily:'arial',
 	fontSize: 40,
-	color: '#666666',
+	color: 'white', //'#666666',
  	marginBottom: '2%',
 	
 	[theme.breakpoints.down('xl')]: {
@@ -62,7 +63,7 @@ const styles = theme => ({
     margin: 'auto',
     width: '600px',
     height: '1px',
-    backgroundColor: '#888888',
+    backgroundColor: 'white', //'#888888',
     marginBottom: '2%',	  
 	
     [theme.breakpoints.down('xl')]: {
@@ -88,7 +89,8 @@ const styles = theme => ({
 	fontFamily:'Raleway',
         fontSize: 22,
 	marginBottom: '3%',  
-	
+	color: 'white',	
+
 	[theme.breakpoints.down('xs')]: {
         fontSize: 15,
       },  
@@ -138,7 +140,7 @@ constructor(props){
 	    </div>
 	   
 	    <ScrollIntoView className={classes.scrollArrow}  selector="#footer">
-  		<i  className="fas fa-arrow-down fa-3x"  style={{color: 'gray'}}></i>
+  		<i  className="fas fa-arrow-down fa-3x"  style={{color: 'white'}}></i>
 	    </ScrollIntoView>
 	    </div>
 	
