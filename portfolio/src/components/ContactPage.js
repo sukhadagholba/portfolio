@@ -108,13 +108,27 @@ const styles = theme => ({
         fontSize: 15,
 	textAlign: 'center',       
       },
- },	
+ },
+  
+ iconAlign:{
+	display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',		
+	},	
 
  link:{
      color: 'black',
      textDecoration: 'none',	 
      cursor: 'pointer',
   },
+
+  linkLinkedln:{
+     color: 'black',
+     textDecoration: 'none',     
+     cursor: 'pointer',
+     marginLeft: '15px',	
+  },	
  subText:{
  	textAlign: 'center',
  
@@ -152,13 +166,16 @@ render() {
             <div className={classes.info}>Below you can find my GitHub and Email. Have a question? 
 		<p className={classes.subText}>Feel free to reach out to me any time!</p>
            </div>
-		
+		<div className={classes.iconAlign}>
+
+	    	<a href="https://www.linkedin.com/in/sukhada-gholba-44a161156/" className={classes.linkLinkedln}>
+                <i className="fab fa-linkedin fa-3x"></i><p>Linkedln</p>
+                </a>
 	    	<a href="https://github.com/sukhadagholba" className={classes.link}>
-                <i className="fab fa-github fa-3x"></i> <p>Github</p>
+                <i className="fab fa-github fa-3x"></i><p>Github</p>
 		</a>
-	       
-                <i className="fas fa-envelope fa-3x"></i>
-	        <p>sukhadagholb@gmail.com</p>
+                <i className="fas fa-envelope fa-3x"></i><p>sukhadagholb@gmail.com</p>
+	    </div>
            </div>
         </div>
     );
