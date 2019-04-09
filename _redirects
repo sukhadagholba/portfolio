@@ -1,1 +1,3 @@
 /*    /index.html   200
+# Redirect default Netlify subdomain to primary domain
+http://sukhadagholba.netlify.com/* http://sukhadagholba.com/:splat 301!
