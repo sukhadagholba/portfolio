@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import Image from './images/w.png';
-import Image1 from './images/bt.jpeg';
+//import Image from './images/w.png';
+//import Image1 from './images/bt.jpeg';
 import ScrollIntoView from 'react-scroll-into-view';
 import AboutPage from './AboutPage';
 import ProjectPage from './Projects';
@@ -16,7 +16,7 @@ const styles = theme => ({
   },
  
   imageContainer: {
-        backgroundImage: `url(${Image1})`,
+        //backgroundImage: `url(${Image1})`,
   	backgroundSize: 'cover',
 	background: 'black',
   	height: '100vh',
