@@ -9,8 +9,9 @@ import Grid from '@material-ui/core/Grid';
 
 const styles = theme => ({
   root: {
-        height: "100vh",
-	background: '#f5f5f5',
+        //height: "100vh",
+	flexGrow: 1,
+	background: '#f5f5f5',//'#f5f5f5',
 	padding: theme.spacing.unit * 3,  
 
 	[theme.breakpoints.down('sm')]: {
@@ -69,7 +70,8 @@ const styles = theme => ({
     },	  
     [theme.breakpoints.down('xs')]: {
          width: '100px',
-	 height: '1.5px', 
+	 height: '1.5px',
+	 //marginBottom: 5,   
     },
   },	
 
@@ -94,8 +96,11 @@ const styles = theme => ({
       }, 
         [theme.breakpoints.down('xs')]: {
          padding: theme.spacing.unit * 1,		
-        height: '40%',
-        width: '50%',
+        width: 350,
+        height: 250,
+		
+	//height: '40%',
+        //width: '50%',
       },  
   
   },	
@@ -121,7 +126,9 @@ const styles = theme => ({
        [theme.breakpoints.down('xs')]: {
 	padding: theme.spacing.unit * 0,       
         fontSize: 15,
-	width: '100%',       
+	width: '100%',
+	textAlign:'center',       
+	lineHeight: 2,       
       }, 
   },
 
@@ -131,7 +138,9 @@ const styles = theme => ({
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-around',
-	 
+	//width: 290,
+    	//height: 200, 
+
 	[theme.breakpoints.down('xs')]: {
         flexDirection: 'column',
       },  
@@ -228,7 +237,6 @@ constructor(props){
 	   </div>
  
 	</div>    
-    
     
     );
   }
