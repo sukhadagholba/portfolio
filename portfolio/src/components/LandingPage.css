@@ -1,0 +1,120 @@
+
+	  @keyframes fadeIt {
+		0% { background-color: #42ACAD; }
+		50%  { background-color: #DC571F; }
+		100%   { background-color: #7F8430; }
+	  }
+
+	  @keyframes fadeItTxt {
+		0%  { color: #DC571F; }
+		50% { color: #42ACAD; }
+		100%   { color: #DF9F2E; }
+	  }
+
+	  body {
+		  padding:0px;
+		  margin:0px;
+	  }
+
+	  .container {
+		background-image:url("./images/translucentTriangles.png"); 
+		background-size: cover;
+		overflow: hidden;
+		animation: fadeIt 15s ease-in-out;
+		animation-iteration-count:infinite;
+		animation-direction: alternate;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100vh;
+	  }
+
+	  .centerDIV
+	  {
+		background-image:url("./images/fullStack.png"); 
+		background-size: cover;
+		width: 600px;
+		height: 484px; 
+	  }
+
+	  .frontBrowserWindow {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+	  }
+
+	  .frontBrowserWindowContainer {
+		margin-top:225px;
+		margin-left:80px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	  }
+
+	  .sukhi {
+		font-family: 'Montserrat', sans-serif;
+		font-weight:bold;
+		font-size: 2.5em;
+		animation: fadeItTxt 15s ease-in-out; 
+		animation-direction: alternate;
+		animation-iteration-count:infinite;
+	  }
+
+	  .developer {
+		font-family: 'Lekton', sans-serif;
+		font-size: 2em;
+		color: #888888;
+	  }
+
+	  hr {
+		border: .5px solid;
+		width: 66%;
+		animation: fadeItTxt 15s ease-in-out; 
+		animation-iteration-count:infinite;
+		animation-direction: alternate;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	  }
+
+	  .arrow {
+		margin-top: 20px;
+		color: #888888;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		justify-content: center;
+	  }
+
+	  .test {
+	  }
+
+	  @media (max-width: 600px) {
+		  .centerDIV
+		  {
+			width:300px;
+			height: 242px; 
+		  }
+
+		  .frontBrowserWindowContainer
+		  {
+			margin-top:90px;
+			margin-left:40px;
+		  }
+
+		  .sukhi
+		  {
+			  font-size:1.5em;
+		  }
+
+		  .developer
+		  {
+			  font-size:1em;
+		  }
+
+		  .arrow
+		  {
+			  font-size:1.5em;
+		  }
+	  }

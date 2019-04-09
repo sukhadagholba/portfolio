@@ -4,7 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import NavBar from './NavBar';
-
+import Grid from '@material-ui/core/Grid';
 
 
 const styles = theme => ({
@@ -104,8 +104,8 @@ const styles = theme => ({
   	width: '40%',
         fontSize: 22,
         fontFamily:'Raleway',
-       	 color: 'black',         //'#616161',
-	 padding: theme.spacing.unit * 2,  
+       	color: 'black',         //'#616161',
+	padding: theme.spacing.unit * 2,  
 	
 	[theme.breakpoints.down('md')]: {
         fontSize: 20,
@@ -190,13 +190,12 @@ constructor(props){
 
     return (
    	<div id="projects" className={classes.root}>
-	
 	    <Typography className={classes.title} component='h2' variant='h5' gutterBottom>
                   Projects
              </Typography>
             <div className={classes.titleBar}></div>
-	
-	    <div className={classes.container}>
+	    
+	   <div className={classes.container}>
 	    <a  className={classes.linkStyle}  href="https://labs10-webchat.netlify.com/">
 	    <div  className={classes.wrapper}>
 	    	<img
@@ -227,11 +226,7 @@ constructor(props){
             </div>
 	</a>
 	   </div>
-
-
-
-
-
+ 
 	</div>    
     
     

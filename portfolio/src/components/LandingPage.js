@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-//import Image from './images/aeria.jpg';
+import Image from './images/w.png';
+import Image1 from './images/bt.jpeg';
 import ScrollIntoView from 'react-scroll-into-view';
 import AboutPage from './AboutPage';
 import ProjectPage from './Projects';
 import ContactPage from './ContactPage';
+import './LandingPage.css';
 import NavBar from './NavBar';
 
 
@@ -14,12 +16,26 @@ const styles = theme => ({
   },
  
   imageContainer: {
-        //backgroundImage: `url(${Image})`,
-  	//backgroundSize: 'cover',
+        backgroundImage: `url(${Image1})`,
+  	backgroundSize: 'cover',
 	background: 'black',
   	height: '100vh',
+	//display: 'flex',
+        //flexDirection: 'row',
+        //alignItems: 'center',
+        //justifyContent: 'center',  
 	  
     },	
+
+  windowImage: {
+  	//backgroundImage: `url(${Image})`,
+	//backgroundSize: 'auto',  
+	//width: 'auto',
+	//height: '600px',  
+  
+  
+  },
+
 
   titleWrapper:{
   	display: 'flex',
@@ -133,16 +149,24 @@ constructor(props){
 	    <div>
 	    <div className={classes.imageContainer}>
              <NavBar/>
-	    <div className={classes.titleWrapper}>
-	    <div className={classes.title}>Sukhada Gholba</div>
-	     <div className={classes.titleBar}></div>
-	    <div className={classes.subTitle}>Full-Stack Web Developer</div>
-	    </div>
-	   
-	    <ScrollIntoView className={classes.scrollArrow}  selector="#footer">
-  		<i  className="fas fa-arrow-down fa-3x"  style={{color: 'white'}}></i>
-	    </ScrollIntoView>
-	    </div>
+	    <div>
+
+		<div className="container">
+                <div className="centerDIV">
+                <div className="frontBrowserWindowContainer">
+                        <div className="frontBrowserWindow">
+                                <div className="sukhi">Sukhada Gholba</div>
+                                <hr/>
+                                <div className="developer">Full Stack Developer</div>
+                                <ScrollIntoView className={classes.scrollArrow}  selector="#footer">
+	    				<i className="fas fa-arrow-down fa-3x arrow"></i>
+	    			 </ScrollIntoView>
+                        </div>
+                </div>
+                </div>
+                </div>	
+	    	</div> 
+	    	</div>
 	
 	    <div id ="footer">
 	    <AboutPage/>
